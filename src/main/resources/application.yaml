@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ms-traceability
+
+  data:
+    mongodb:
+      uri: mongodb://root:secret@localhost:27017/pragma_traceability?authSource=admin
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs

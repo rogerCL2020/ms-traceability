@@ -8,6 +8,12 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:secret@localhost:27017/pragma_traceability?authSource=admin
+app:
+  description: "Pragma Powerup - Microservicio traceability"
+  version: "1.0.0"
+  security:
+    service-jwt:
+      secret: ${JWT_SECRET:bfSPR28aJsO+O+CMmiGb7FFpBeYwnPuMbqHZVxqw7X0=}
 
 springdoc:
   swagger-ui:
